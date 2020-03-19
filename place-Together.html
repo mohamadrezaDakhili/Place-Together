@@ -8,23 +8,30 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- added css file -->
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/png" href="" />
     <title>place Together</title>
+    <!-- added jquery file in project -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
 </head>
 
 <body>
-    <div class=" vertical-center justify-content-center boxFull">
-        <div id="box" style="height: 300px;" class="row justify-content-center align-items-center">
-            <div style="background-color: red;" class="box"></div>
-            <div id="boxRight" class="box"></div>
-            <div id="boxCenter" class="box"></div>
-            <div id="boxRight" class="box"></div>
-            <div class="box"></div>
+    <!-- box loading -->
+    <div class="vertical-center justify-content-center">
+        <div class="cardLoading col-12">
+            <div style="height: 300px;" class="row justify-content-center align-items-center">
+                <div class="boxLoading" style="background-color: red;"></div>
+                <div id="boxRight" class="boxLoading"></div>
+                <div id="boxCenter" class="boxLoading"></div>
+                <div id="boxRight" class="boxLoading"></div>
+                <div class="boxLoading"></div>
+            </div>
         </div>
     </div>
 </body>
+
+<!-- added js file -->
 <script src="script.js"></script>
+
 </html>

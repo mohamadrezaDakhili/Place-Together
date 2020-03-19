@@ -1,8 +1,9 @@
-*{
-    margin: 0em;
-    padding: 0em;
+* {
+  margin: 0em;
+  padding: 0em;
 }
 
+/* vertical center */
 .vertical-center {
   min-height: 100%;
   min-height: 100vh;
@@ -10,37 +11,102 @@
   align-items: center;
 }
 
-.box{
-    width: 10px;
+/* background image */
+body {
+  background-image: url(image/img-background.jpg);
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* card for loading */
+.cardLoading{
+    height: 100vh;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.1);
+    animation-name: card;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+
+/* animation for card loading */
+@keyframes card{
+    0% {margin-left: 0vw;}
+    100%{margin-left: -200vw;}
+
+}
+
+/* full box loading */
+.boxLoading {
+  width: 10px;
+  height: 30px;
+  background-color: black;
+  margin-right: 7px;
+  border-radius: 3px;
+}
+
+/* box loading right and left  */
+#boxRight {
+  animation-name: animRight;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+}
+
+/* anim for box loadnig right and left */
+@keyframes animRight {
+  0% {
+    height: 50px;
+  }
+  15% {
     height: 30px;
-    background-color: black;
-    margin-right: 7px;
-    border-radius: 3px;
+  }
+  25% {
+    height: 50px;
+  }
+  50% {
+    height: 30px;
+  }
+  75% {
+    height: 50px;
+  }
+  100% {
+    height: 30px;
+  }
 }
 
-#boxRight{
-    animation-name: animRight;
-    animation-duration: 1s;
+/* box center for loading */
+#boxCenter {
+  animation-name: animCenter;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+
 }
 
-#boxCenter{
-    animation-name: animCenter;
-    animation-duration: 1s;
-}
-
-@keyframes animRight{
-    0% {height: 50px;}
-    15% {height: 30px;}
-    25% {height: 50px;} 
-    50% {height: 30px;}
-    75% {height: 50px;} 
-    100% {height: 30px;} 
-}
-@keyframes animCenter{
-    0% {height: 80px;}
-    15% {height: 30px;}
-    25% {height: 80px;} 
-    50% {height: 30px;}
-    75% {height: 80px;} 
-    100% {height: 30px;} 
+/* anim for center box loading */
+@keyframes animCenter {
+  0% {
+    height: 80px;
+  }
+  15% {
+    height: 30px;
+  }
+  25% {
+    height: 80px;
+  }
+  50% {
+    height: 30px;
+  }
+  75% {
+    height: 80px;
+  }
+  100% {
+    height: 30px;
+  }
 }

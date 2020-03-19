@@ -1,3 +1,8 @@
+//jQuery code
 setTimeout(function() {
-  $("#box").fadeOut("fast");
+  $(".boxLoading").fadeOut("fast");
 }, 2000);
+
+setTimeout(function() {
+  $(".cardLoading").fadeOut("fast");
+}, 3000);
