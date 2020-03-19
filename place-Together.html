@@ -11,19 +11,26 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/png" href="" />
     <title>place Together</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 
 <body>
-    <div class=" vertical-center justify-content-center">
-        <div style="height: 300px;" class="row justify-content-center align-items-center">
+    <div class=" vertical-center justify-content-center boxFull">
+        <div id="box" style="height: 300px;" class="row justify-content-center align-items-center">
             <div style="background-color: red;" class="box"></div>
-            <div id="boxLeft" class="box"></div>
+            <div id="boxRight" class="box"></div>
             <div id="boxCenter" class="box"></div>
             <div id="boxRight" class="box"></div>
             <div class="box"></div>
-
         </div>
     </div>
 </body>
+
+    <script>
+        setTimeout(function () {
+            $('#box').fadeOut('fast');
+        }, 2000);
+    </script>
 
 </html>
