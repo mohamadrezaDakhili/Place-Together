@@ -1,3 +1,14 @@
+/* font */
+@font-face {
+    font-family: 'Montserrat_Bold'; 
+    src:url('font/perpetua/Montserrat-Bold.otf') format('truetype');     
+}
+@font-face {
+    font-family: 'Montserrat-Light'; 
+    src:url('font/perpetua/Montserrat-Regular.otf') format('truetype');     
+}
+
+
 * {
   margin: 0em;
   padding: 0em;
@@ -26,7 +37,6 @@ body {
 .cardLoading{
     height: 100vh;
     background-color: rgb(240, 240, 240);
-    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,14 +63,14 @@ body {
 }
 
 /* box loading right and left  */
-#boxRight {
-  animation-name: animRight;
+#boxRightLoading {
+  animation-name: animRightLoading;
   animation-duration: 1s;
   animation-delay: 0.5s;
 }
 
 /* anim for box loadnig right and left */
-@keyframes animRight {
+@keyframes animRightLoading {
   0% {
     height: 50px;
   }
@@ -82,15 +92,15 @@ body {
 }
 
 /* box center for loading */
-#boxCenter {
-  animation-name: animCenter;
+#boxCenterLoading {
+  animation-name: animCenterLoading;
   animation-duration: 1s;
   animation-delay: 0.5s;
 
 }
 
 /* anim for center box loading */
-@keyframes animCenter {
+@keyframes animCenterLoading {
   0% {
     height: 80px;
   }
@@ -109,4 +119,19 @@ body {
   100% {
     height: 30px;
   }
+}
+
+#textLogo{
+    font-family: "Montserrat_Bold";
+    font-size: 1.2vw;
+    margin-left: 3%;
+}
+
+.textNav{
+    margin-right: 4%;
+    font-family: "Montserrat-Light";
+    font-size: 0.8vw;
+}
+.textNav:hover{
+    border-bottom: 1px solid #fe8369;
 }
