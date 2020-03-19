@@ -1,13 +1,12 @@
 /* font */
 @font-face {
-    font-family: 'Montserrat_Bold'; 
-    src:url('font/perpetua/Montserrat-Bold.otf') format('truetype');     
+  font-family: "Montserrat_Bold";
+  src: url("font/perpetua/Montserrat-Bold.otf") format("truetype");
 }
 @font-face {
-    font-family: 'Montserrat-Light'; 
-    src:url('font/perpetua/Montserrat-Regular.otf') format('truetype');     
+  font-family: "Montserrat-Light";
+  src: url("font/perpetua/Montserrat-Regular.otf") format("truetype");
 }
-
 
 * {
   margin: 0em;
@@ -34,23 +33,26 @@ body {
 }
 
 /* card for loading */
-.cardLoading{
-    height: 100vh;
-    background-color: rgb(240, 240, 240);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.1);
-    animation-name: card;
-    animation-duration: 2s;
-    animation-delay: 2s;
+.cardLoading {
+  height: 100vh;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.1);
+  animation-name: card;
+  animation-duration: 2s;
+  animation-delay: 2s;
 }
 
 /* animation for card loading */
-@keyframes card{
-    0% {margin-left: 0vw;}
-    100%{margin-left: -200vw;}
-
+@keyframes card {
+  0% {
+    margin-left: 0vw;
+  }
+  100% {
+    margin-left: -200vw;
+  }
 }
 
 /* full box loading */
@@ -96,7 +98,6 @@ body {
   animation-name: animCenterLoading;
   animation-duration: 1s;
   animation-delay: 0.5s;
-
 }
 
 /* anim for center box loading */
@@ -121,17 +122,47 @@ body {
   }
 }
 
-#textLogo{
-    font-family: "Montserrat_Bold";
-    font-size: 1.2vw;
-    margin-left: 3%;
+/* nav */
+#textLogo {
+  font-family: "Montserrat_Bold";
+  font-size: 1.2vw;
+  margin-left: 3%;
+}
+.textNav {
+  margin-right: 4%;
+  font-family: "Montserrat-Light";
+  font-size: 0.8vw;
+  font-weight: bold;
+}
+.textNav:hover {
+  border-bottom: 1px solid #fe8369;
+  font-weight: 500;
+}
+.buttonPhone {
+  background-color: #fe8369;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  height: 100%;
+  width: 80%;
 }
 
-.textNav{
-    margin-right: 4%;
-    font-family: "Montserrat-Light";
-    font-size: 0.8vw;
+/* text center box */
+.textCenter {
+  color: white;
+  font-family: "Montserrat-Light";
+  text-shadow: 0 5px 20px rgba(80, 48, 32, 0.42);
 }
-.textNav:hover{
-    border-bottom: 1px solid #fe8369;
+
+/* search */
+.inputSearch {
+  background-color: transparent;
+  border-color: transparent;
+  width: 100%;
+  margin: 10px;
+  font-size: 1.5vw;
+  font-family: "Montserrat-Light";
+  outline: none;
+}
+.inputSearch::placeholder {
+  color: rgb(195, 195, 195);
 }
