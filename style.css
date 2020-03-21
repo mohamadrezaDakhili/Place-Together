@@ -13,25 +13,225 @@
   padding: 0em;
 }
 
-/* vertical center */
-.vertical-center {
-  min-height: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-}
-
-/* background image */
-body {
-  background-image: url(image/img-background.jpg);
+body{
   width: 100%;
-  height: 100%;
+  height: 100vh;
+}
+/* background image */
+.backgroundImage{
+  background-image: url("image/img-background.jpg");
+  background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: center;
+}
+/* full box */
+.box{
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
+/* nav */
+.boxNav{
+  width: 100%;
+  height: 8%;
+  margin-top: 1%;
+}
+/* logo image */
+.imgLogo{
+  height: 80%;
+}
+/* text logo */
+.txtLogo{
+  font-family: "Montserrat_Bold";
+  margin-left: 2%;
+  font-size: 18px;
+}
+/* item nav */
+.textNav {
+  margin-right: 3%;
+  font-family: "Montserrat-Light";
+  font-size: 16px;
+}
+.textNav:hover {
+  border-bottom: 1px solid #fe8369;
+  font-weight: bold;
+}
+/* button phone */
+.buttonPhone {
+  background-color: #fe8369;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  height: 80%;
+  width: 75%;
+}
+/* text phone */
+#txtPhone{
+  color: white;
+  margin-left: 3%;
+  font-size: 16px;
+}
+/* when small size screen , item nav conver to hamberger menu */
+#btnMenu{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: none;
+  margin-left: 30%;
+}
+#btnMenu:hover{
+  background-color: rgba(46, 46, 46, 0.287);
+}
+/* icon menu */
+#logoMenu{
+  width: 20px;
+  transform: rotate(90deg);
+}
+/* text center box */
+#textOne {
+  color: white;
+  font-family: "Montserrat-Light";
+  text-shadow: 0 5px 20px rgba(80, 48, 32, 0.42);
+  font-size: 38px;
+}
+#textTwo {
+  color: white;
+  font-family: "Montserrat-Light";
+  text-shadow: 0 5px 20px rgba(80, 48, 32, 0.42);
+  font-size: 50px;
+  margin-top: -10px;
+  margin-bottom: 2%;
+}
+
+#searchBox{
+ opacity: 0.5;
+ background-color: rgb(255, 255, 255);
+ box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.2);
+ border-radius: 5px;
+ height: 70%;
+ padding: 0;
+}
+
+#btnSearch{
+  width: 20%;
+  height: 100%;
+  background-color: #fe8369;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Montserrat-Light" ;
+  font-size: 20px;
+}
+
+#inputSearch{
+  width: 80%;
+  height: 100%;
+  background-color: transparent;
+  border-color: transparent;
+  outline: none;
+  font-size: 28px;
+  color: black;
+  padding: 10px;
+}
+#inputSearch::placeholder {
+  color: rgb(139, 139, 139);
+}
+
+@media screen and (max-width:1200px){
+  #txtPhone{
+    font-size: 14px;
+  }
+
+  #logoPhone{
+    height: 50%;
+  }
+}
+
+@media screen and (max-width:992px){
+  .imgLogo{
+    height: 60%;
+    margin-left: 5%;
+  }
+  .txtLogo{
+    font-size: 16px;
+  }
+  .textNav{
+    font-size: 14px;
+  }
+  .buttonPhone{
+    width: 95%;
+  }
+  #textOne{
+    font-size: 28px;
+  }
+  #textTwo{
+    font-size: 40px;
+  }
+    #btnSearch{
+    font-size: 18px;
+  }
+
+}
+
+@media screen and (max-width:767px){
+  .buttonPhone{
+    display: none;
+  }
+  #logoPhone{
+    display: none;
+  }
+  #txtPhone{
+    display: none;
+  }
+  .textNav{
+    font-size: 12px;
+  }
+  .txtLogo{
+    font-size: 14px;
+  }
+
+  #btnSearch{
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width:575px){
+  .backgroundImage{
+      filter: blur(4px);
+    -webkit-filter: blur(8px);
+  }
+
+  .textNav{
+    display: none;
+  }
+
+  #btnMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .txtLogo{
+    font-size: 12px;
+    margin-left: 2%;
+  }
+
+    #textOne{
+    font-size: 18px;
+  }
+  #textTwo{
+    font-size: 26px;
+    margin-top: -5px;
+  }
+    #btnSearch{
+    font-size: 12px;
+  }
+}
 /* card for loading */
 .cardLoading {
   height: 100vh;
@@ -122,47 +322,3 @@ body {
   }
 }
 
-/* nav */
-#textLogo {
-  font-family: "Montserrat_Bold";
-  font-size: 1.2vw;
-  margin-left: 3%;
-}
-.textNav {
-  margin-right: 4%;
-  font-family: "Montserrat-Light";
-  font-size: 0.8vw;
-  font-weight: bold;
-}
-.textNav:hover {
-  border-bottom: 1px solid #fe8369;
-  font-weight: 500;
-}
-.buttonPhone {
-  background-color: #fe8369;
-  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
-  height: 100%;
-  width: 80%;
-}
-
-/* text center box */
-.textCenter {
-  color: white;
-  font-family: "Montserrat-Light";
-  text-shadow: 0 5px 20px rgba(80, 48, 32, 0.42);
-}
-
-/* search */
-.inputSearch {
-  background-color: transparent;
-  border-color: transparent;
-  width: 100%;
-  margin: 10px;
-  font-size: 1.5vw;
-  font-family: "Montserrat-Light";
-  outline: none;
-}
-.inputSearch::placeholder {
-  color: rgb(195, 195, 195);
-}
