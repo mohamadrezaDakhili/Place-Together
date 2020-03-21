@@ -305,10 +305,61 @@ hr.style {
   font-size: 14px;
   color: black;
 }
+#twoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 /* card two */
 #cardTwo {
-  
+  width: 280px;
+  height: 350px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 20px 40px 0 rgba(80, 48, 32, 0.2);
+  padding-top: 3%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+#imgTwo {
+  width: 220px;
+  height: 220px;
+  margin-top: 5%;
+}
+
+/* box text */
+.objectTextRight {
+  font-family: "Montserrat_Bold";
+  font-size: 28px;
+}
+/* line */
+#styleLine {
+  width: 100%;
+  border-top: 2px solid #fe8369;
+}
+.styleText {
+  width: 75%;
+  line-height: 2;
+  font-family: "Montserrat-Light";
+  font-size: 16px;
+}
+  .btnBoxText{
+    width: 155px;
+    height: 52px;
+    margin-top: 5%;
+    background-color: #fe8369;
+    border-radius: 5px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.16);
+  }
+  #textBtnBoxRight{
+    color: white;
+    font-family: "Montserrat-Light";
+    font-size: 14px;
+    margin-right: 7%;
+  }
 
 @media screen and (max-width: 1200px) {
   #txtPhone {
@@ -330,6 +381,14 @@ hr.style {
   }
   #subjectTextCard {
     font-size: 12px;
+  }
+  #cardTwo {
+    width: 200px;
+    height: 260px;
+  }
+  #imgTwo {
+    width: 160px;
+    height: 160px;
   }
 }
 
@@ -364,12 +423,26 @@ hr.style {
     width: 120px;
     height: 150px;
   }
-    #objectTextCard{
+  #objectTextCard {
     font-size: 10px;
   }
-  #subjectTextCard{
-  font-size: 10px;
-}
+  #subjectTextCard {
+    font-size: 10px;
+  }
+  #cardTwo {
+    width: 150px;
+    height: 210px;
+  }
+  #imgTwo {
+    width: 120px;
+    height: 120px;
+  }
+  .objectTextRight {
+    font-size: 20px;
+  }
+  .styleText {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -388,9 +461,12 @@ hr.style {
   .txtLogo {
     font-size: 14px;
   }
-
   #btnSearch {
     font-size: 16px;
+  }
+  .styleText {
+    line-height: 1.7;
+    font-size: 14px;
   }
 }
 
@@ -423,5 +499,12 @@ hr.style {
   }
   #oneBox {
     display: none;
+  }
+  .objectTextRight {
+    font-size: 14px;
+  }
+  .styleText {
+    line-height: 1.7;
+    font-size: 12px;
   }
 }
