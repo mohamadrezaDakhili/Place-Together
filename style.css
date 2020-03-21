@@ -322,3 +322,27 @@ body{
   }
 }
 
+#bgPageTwo{
+  background-image: linear-gradient(to bottom, #f0e3d023 , #f0e3d0 20%);
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  bottom: 30%;
+}
+
+#triangle{
+width: 100%;
+height: 0;
+transform: rotate(180deg);
+border-right: 40vw solid white;
+border-bottom: 40vh solid transparent;
+}
+
+#boxPageTwo{
+  position: absolute;
+  z-index: 1;
+}
+
