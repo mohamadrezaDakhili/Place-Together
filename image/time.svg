@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__time" width="61.864" height="61.864" viewBox="0 0 61.864 61.864">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#fff}
+        </style>
+    </defs>
+    <path id="prefix__Path_1315" d="M30.932 0a30.932 30.932 0 1 0 30.932 30.932A30.967 30.967 0 0 0 30.932 0zm0 59.8A28.87 28.87 0 1 1 59.8 30.932 28.9 28.9 0 0 1 30.932 59.8z" class="prefix__cls-1" data-name="Path 1315"/>
+    <path id="prefix__Path_1316" d="M31.4 26.367V15.91a1.031 1.031 0 1 0-2.062 0v10.457a4.119 4.119 0 0 0-2.947 2.947h-7.36a1.031 1.031 0 0 0 0 2.062h7.364a4.116 4.116 0 1 0 5.005-5.009zm-1.031 6.04a2.062 2.062 0 1 1 2.062-2.062 2.064 2.064 0 0 1-2.058 2.062z" class="prefix__cls-1" data-name="Path 1316" transform="translate(.559 .462)"/>
+    <path id="prefix__Path_1317" d="M30.031 9.972a1.031 1.031 0 0 0 1.031-1.031V7.91a1.031 1.031 0 0 0-2.062 0v1.031a1.031 1.031 0 0 0 1.031 1.031z" class="prefix__cls-1" data-name="Path 1317" transform="translate(.901 .214)"/>
+    <path id="prefix__Path_1318" d="M30.031 49.879A1.031 1.031 0 0 0 29 50.91v1.031a1.031 1.031 0 1 0 2.062 0V50.91a1.031 1.031 0 0 0-1.031-1.031z" class="prefix__cls-1" data-name="Path 1318" transform="translate(.901 1.549)"/>
+    <path id="prefix__Path_1319" d="M52.062 28.879h-1.031a1.031 1.031 0 0 0 0 2.062h1.031a1.031 1.031 0 0 0 0-2.062z" class="prefix__cls-1" data-name="Path 1319" transform="translate(1.553 .897)"/>
+    <path id="prefix__Path_1320" d="M9.062 28.879H8.031a1.031 1.031 0 0 0 0 2.062h1.031a1.031 1.031 0 0 0 0-2.062z" class="prefix__cls-1" data-name="Path 1320" transform="translate(.217 .897)"/>
+    <path id="prefix__Path_1321" d="M44.88 13.624l-.729.729a1.031 1.031 0 1 0 1.458 1.458l.729-.729a1.031 1.031 0 0 0-1.458-1.458z" class="prefix__cls-1" data-name="Path 1321" transform="translate(1.362 .414)"/>
+    <path id="prefix__Path_1322" d="M14.475 44.03l-.729.729a1.031 1.031 0 1 0 1.454 1.458l.729-.729a1.031 1.031 0 0 0-1.458-1.458z" class="prefix__cls-1" data-name="Path 1322" transform="translate(.418 1.358)"/>
+    <path id="prefix__Path_1323" d="M45.609 44.03a1.031 1.031 0 0 0-1.458 1.458l.729.729a1.031 1.031 0 0 0 1.458-1.458z" class="prefix__cls-1" data-name="Path 1323" transform="translate(1.362 1.358)"/>
+    <path id="prefix__Path_1324" d="M15.2 13.624a1.031 1.031 0 0 0-1.458 1.458l.729.729a1.031 1.031 0 0 0 1.458-1.458z" class="prefix__cls-1" data-name="Path 1324" transform="translate(.418 .414)"/>
+</svg>
