@@ -435,6 +435,61 @@ height: auto;
 font-family: "Montserrat_Bold";
 font-size: 14px;
 } 
+.btnBoxPageFive {
+  width: 40%;
+  height: 52px;
+  background-color: #fe8369;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.16);
+  max-width: 185px;
+}
+#styleLineFive{
+  width: 20%;
+  border-top: 2px solid #fe8369;
+  max-width: 150px;
+  margin: 0px 2%;
+}
+.textObjectFive{
+  font-family: "Montserrat_Bold";
+  font-size: 14px;
+  color: white;
+}
+.lineFive{
+  width: 30px;
+  border-top: 2px solid #fe8369;
+}
+.list-group-item{
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+  font-family: "Montserrat-Light";
+  color: white;
+  padding-left: 0;
+  padding-right: 0;
+}
+.btnBoxSearchEmail {
+  width: 25%;
+  height: 40px;
+  background-color: #fe8369;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  max-width: 185px;
+  font-size: 12px;
+}
+.styleBoxSearchAddress{
+background-color: transparent;
+width: 75%;
+border: 2px solid white;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+padding: 5px;
+color: white;
+font-family: "Montserrat-Light";
+font-size: 14px;
+
+
+
+}
 
 @media screen and (max-width: 1200px) {
   #txtPhone {
@@ -617,5 +672,8 @@ font-size: 14px;
 }
 #styleLineThree{
   width: 50%;
+}
+.btnBoxPageFive{
+  font-size: 12px;
 }
 }
