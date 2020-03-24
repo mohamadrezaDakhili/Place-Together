@@ -429,13 +429,12 @@ height: auto;
   width: 150px; 
   height: 150px; 
   border: 2px solid #fe8369;
-  margin-top: 3%;
+  margin-top: 30px;
 }
 .styleTextMe{
 font-family: "Montserrat_Bold";
 font-size: 14px;
 } 
-
 
 @media screen and (max-width: 1200px) {
   #txtPhone {
@@ -606,6 +605,8 @@ font-size: 14px;
   width: 110px;
   height: 42px;
   margin-bottom: 5%;
+  max-height: 52px;
+  min-height: 32px;
 }
 #textBtnBoxRight {
   font-size: 10px;
