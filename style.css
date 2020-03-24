@@ -421,7 +421,20 @@ height: auto;
 
 }
                                           /* page five */
-
+.vline{
+    border-left: 2px solid #fe8369;
+  height: 150px;
+}
+.boxCircleImage{
+  width: 150px; 
+  height: 150px; 
+  border: 2px solid #fe8369;
+  margin-top: 3%;
+}
+.styleTextMe{
+font-family: "Montserrat_Bold";
+font-size: 14px;
+} 
 
 
 @media screen and (max-width: 1200px) {
