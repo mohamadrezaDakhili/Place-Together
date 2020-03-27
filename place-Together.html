@@ -18,7 +18,7 @@
 
 <body>
     <!-- box loading -->
-    <div style="position: relative;">
+    <!-- <div style="position: relative;">
         <div style="z-index: 2; position: fixed;" class="cardLoading col-12">
             <div style="height: 300px;" class="row justify-content-center align-items-center">
                 <div class="boxLoading" style="background-color: red;"></div>
@@ -28,7 +28,7 @@
                 <div class="boxLoading"></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- page one -->
     <!-- background image -->
     <div class="backgroundImage h-100"></div>
@@ -45,11 +45,11 @@
             <!-- box item nav bar -->
             <div
                 class="col-xl-6 col-lg-6 col-md-7 col-sm-7 col-3 p-0 d-flex justify-content-center align-items-center h-100">
-                <div class="textNav">Home</div>
-                <div class="textNav">About Us</div>
-                <div class="textNav">Services</div>
-                <div class="textNav">Testimonials</div>
-                <div class="textNav">Contact Us</div>
+                <div class="textNav"><a href="#C1">Wellcome to</a></div>
+                <div class="textNav"><a href="#C2">Featured Homes</a></div>
+                <div class="textNav"><a href="#C3">Features & Benifits</a></div>
+                <div class="textNav"><a href="#C4">Client</a></div>
+                <div class="textNav"><a href="#C5">About us</a></div>
                 <!-- when small size screen , item nav conver to hamberger menu -->
                 <div id="btnMenu">
                     <img id="logoMenu" src="image/menu.png" alt="menu">
@@ -57,13 +57,14 @@
             </div>
     
             <!-- box phone -->
-            <div class="p-0 btnNav d-flex justify-content-start align-items-center h-100 col-lg-2 col-md-2">
+            <div class="p-0 d-flex justify-content-start align-items-center h-100 col-lg-2 col-md-2">
                 <!-- background phone -->
                 <div class="buttonPhone d-flex justify-content-center align-items-center">
                     <!-- logo phone -->
                     <img id="logoPhone" src="image/phone.svg" alt="phone">
                     <!-- number phone -->
-                    <span id="txtPhone">+123 456 7890</span>
+                    <!-- <span id="txtPhone">+123 456 7890</span> -->
+                    <a id="txtPhone" href="tel:09384010471">+989384010471</a>
                 </div>
             </div>
     
@@ -86,7 +87,7 @@
             <div class="d-flex justify-content-center align-items-center w-100 h-25">
                 <div id="searchBox" class="d-flex justify-content-end col-xl-7 col-lg-7 col-md-8 col-sm-9 col-10 mb-3">
                     <input id="inputSearch" type="text" placeholder="SEARCH">
-                    <div id="btnSearch">SEARCH</div>
+                    <button id="btnSearch">SEARCH</button>
                 </div>
             </div>
         </div>
@@ -171,18 +172,11 @@
             </div>
             <!-- box text -->
             <div class="col-6 d-flex justify-content-start align-items-start flex-column mt-5">
-                <span class="objectTextRight">WELLCOME TO</span>
+                <span id="C1" class="objectTextRight">WELLCOME TO</span>
                 <span class="objectTextRight mt-0">PROPERTY AGENT</span>
                 <hr id="styleLine">
                 <div class="styleText">
-                    <p>
-                        Lorem ipsum dolor sit amet,Stet clita kasd gubergren, no sea takimata sanctus est is the lorem
-                        ipsum
-                        dolor sit amet. sed
-                        diam nonumy ut labore et dolore s the magna aliquyam.
-                    </p>
-                    <br>
-                    <p>
+                    <p id="textPageTwo">
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                         laudantium,
                         totam rem aperiam,
@@ -190,21 +184,21 @@
                         odit aut fugit, sed
                         quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt eque porro quisquam.
                     </p>
-                    <div class="btnBoxText d-flex justify-content-center align-items-center">
+                    <button class="btnBoxText d-flex justify-content-center align-items-center">
                         <span id="textBtnBoxRight">More Detail</span>
                         <img src="image/arrow-long.svg" alt="icon">
-                    </div>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
     <!-- page three -->
-    <div class="w-100 mt-4 d-flex flex-column">
+    <div class="w-100 mt-5 d-flex flex-column">
         <!-- full box page -->
         <div class="w-100 d-flex flex-column align-items-center">
             <!-- text subject -->
             <div class="boxPageThree">
-                <span class="objectTextRight">FEATURED HOMES</span>
+                <span id="C2" class="objectTextRight">FEATURED HOMES</span>
             </div>
         </div>
         <!-- line -->
@@ -401,7 +395,7 @@
             <div class="col mb-4 d-flex justify-content-center">
                 <div class="card">
                     <!--Card image-->
-                    <img class="card-img-top" src="image/six.jpg" alt="Card image cap">
+                    <img  class="card-img-top" src="image/six.jpg" alt="Card image cap" >
     
                     <!--Card content-->
                     <div class="card-body">
@@ -447,7 +441,7 @@
             <div id="boxTextTopPageFour">
                 <!-- line -->
                 <hr id="styleLineFour">
-                <span class="objectTextRight">Features & Benifits</span>
+                <span id="C3" class="objectTextRight">Features & Benifits</span>
             </div>
             <div class="row m-0 p-0">
                 <!-- box left (text and button) -->
@@ -545,12 +539,12 @@
         </div>
     </div>
     <!-- page five -->
-    <div class="h-100 d-flex justify-content-center p-0">
+    <div class="d-flex justify-content-center p-0">
         <div class="col-9 col-xl-6 col-lg-6 col-md-7 col-sm-8 d-flex flex-column align-items-center">
             <!-- line -->
             <div class="vline"></div>
             <!-- text -->
-            <span class="mt-5 objectTextRight">
+            <span id="C4" class="mt-5 objectTextRight">
                 Client Testimoninals
             </span>
             <!-- image user -->
@@ -574,14 +568,14 @@
                 <img src="image/arrow-long.svg" alt="icon"></button>
         </div>
     </div>
-    <!-- page five -->
+    <!-- page six -->
     <div class="row m-0 bg-dark">
         <div class="col-12 row justify-content-center m-0">
             <!-- top box -->
             <div style="min-height: 350px;"
                 class="col-xl-7 col-lg-8 col-md-9 col-sm-10 col-11 flex-column d-flex justify-content-center align-items-center">
                 <br>
-                <span class="text-white objectTextRight">
+                <span id="C5" class="text-white objectTextRight">
                     Want to Buy or Sell Your Property?
                 </span>
                 <br>
@@ -631,7 +625,7 @@
                         <span class="textObjectFive">Sitemap</span>
                         <!-- list two -->
                         <hr class="lineFive">
-                        <ul class="list-group bg-transparent">
+                        <ul class="list-group">
                             <li class="list-group-item">- Our Process</li>
                             <li class="list-group-item">- What We Do</li>
                             <li class="list-group-item">- Location</li>
@@ -649,6 +643,8 @@
                             <li class="list-group-item">- Terms & Conditions</li>
                             <li class="list-group-item">- Owners</li>
                             <li class="list-group-item">- Houses</li>
+                            <li class="list-group-item"></li>
+
                         </ul>
                     </div>
                     <!-- box five hidden -->
